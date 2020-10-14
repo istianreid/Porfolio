@@ -1,0 +1,256 @@
+
+@font-face {
+ src: url(../font/Calibre-Regular.ttf);
+ font-family: calibre ;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #04131E;
+  cursor: none;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+li {
+  font-family: calibri ;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Style library */
+.font-12 {
+  font-size: 12px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-25 {
+  font-size: 25px;
+}
+.font-80 {
+  font-size: 80px;
+}
+.font-40 {
+  font-size: 40px;
+}
+
+.color-p {
+  color: #07CFF6;
+}
+.color-s {
+  color:  #C4C4C4;
+}
+.color-white {
+  color: #fff;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+  align-content: center;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.d-flex-start {
+  display: flex;
+  justify-content: start;
+}
+
+
+
+.btn {
+  border: #07CFF6 2px solid;
+  padding: 10px 15px 10px 15px;
+  transition: 400ms ease;
+}
+.btn:hover{
+  background-color: #07cef62d;
+}
+
+/* Body Style */
+
+/* Navbar */
+.navbar {
+  margin-top: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.logo-image {
+  position: fixed;
+}
+
+.list {
+  margin: 20px 20px 20px 5px ;
+  font-size: 18px;
+  font-weight: 400;
+}
+.hover-this {
+  transition: all 0.3s ease;
+}
+
+span {
+  display: inline-block;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: #07CFF6;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease;
+}
+
+.hover-this:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(5);
+}
+
+/* Hero */
+
+.profile {
+  margin-right: 60px;
+  width: 300px;
+  height: 310px;
+  background: linear-gradient(180deg, rgba(7, 207, 246, 0.17) 0%, rgba(255, 255, 255, 0) 100%),;
+  border: 5px solid #07CFF6;
+  filter: drop-shadow(20px 4px 31px #07CFF6);
+}
+.profile canvas{
+  width: 300px !important;
+  height: 300px !important;
+  
+}
+/* canvas {
+  background-image: url(../images/plain-photo.png);
+} */
+
+/* image2 {
+  z-index: 100;;
+} */
+
+.hero {
+  height: 800px;
+}
+.hero-right {
+  margin-top: 30px;
+}
+.hero-right h1 {
+  margin-left: -6px;
+}
+
+.hero-right h2 {
+  margin-bottom: 40px;
+}
+
+/* About */
+
+.about {
+  height: 800px;
+}
+
+.about h2{
+  padding: 25px;
+  height: 100px;
+  text-align: center
+}
+.about p{
+  padding: 10px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.skills {
+  margin: 30px;
+}
+
+/* Projects */
+
+
+/* .projects {
+  height: 700px;
+} */
+
+.project-title{
+  height: 200px;
+  text-align: center;
+}
+
+.port-card {
+  padding: 15px 10px;
+}
+
+.front-card{
+  margin-top: -254px;
+  width: 450px;
+  height: 250px;
+  background-color: #07CFF6;
+  transition: 1s ease;
+  opacity: 0.5;
+}
+.front-card:hover{
+  opacity: 0;
+}
+
+
+.port-text {
+  margin-top: 10px;
+}
+
+.port-text h3 {
+  line-height: 40px;
+}
+
+.port-text img {
+  padding-left: 10px;
+}
+
+.port-tools {
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+/* Contact  */
+
+.contact {
+  height: 800px;
+  text-align: center;
+}
+
+.contact p {
+  width: 500px;
+  margin: 0 auto ;
+  margin-bottom: 60px;
+}
