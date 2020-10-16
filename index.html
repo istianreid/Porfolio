@@ -21,18 +21,17 @@
 <body">
     
  <!-- navbar -->
-    <nav class="container">
-        <div class="row navbar">
-            <div class="col-xl-6" >
+    <nav class="container" id="navbar">
+        <div class="row navbar" >
+            <div class="col-xl-6 logo" >
                 <img class="logo-image" src="./assets/images/logo-w50-h50.svg" alt="logo">
             </div>
             <div class="col-xl-6">
                 <nav class="flex-end">
-                    <a href="#" class="list color-p hover-this data"><span>About</span></a>
-                    <a href="#" class="list color-p hover-this data"><span>Project</span></a>
-                    <a href="#" class="list color-p hover-this data"><span>Contact</span></a>
-                    <a href="#" class="list color-p hover-this data"><span>Resume</span></a>
-                    <div class="cursor"></div>
+                    <a href="#about" class="list color-p "><span>About</span></a>
+                    <a href="#project" class="list color-p "><span>Project</span></a>
+                    <a href="#contact" class="list color-p "><span>Contact</span></a>
+                    <a href="#" class="list color-p "><span>Resume</span></a>
               </nav>
             </div>
         </div>
@@ -40,7 +39,7 @@
 
 <!-- Hero -->
 
-    <section class="container-2">
+    <section class="container-2" id="hero">
         <div class="row hero flex-center">
             <div class="col-xl-5 flex-end wrapper">
                 <!-- <img class="profile" src="./assets/images/plain-photo.png" alt="Profile"> -->
@@ -55,9 +54,34 @@
         </div>
     </section>
 
+
+    
+<!-- side icon -->
+
+    <section class="container">
+        <div class="side">
+            <div class="left-side">
+                <ul>
+                    <li class="icon"><a href="https://www.facebook.com/darkreidcute"><img src="./assets/images/side_icons/Vector-facebook.svg" alt="facebook"></a></li>
+                    <li class="icon"><a href="https://www.instagram.com/chrisreid19/"><img src="./assets/images/side_icons/Vector-instagram.svg" alt="instagram"></a></li>
+                    <li class="icon"><a href="https://github.com/istianreid"><img src="./assets/images/side_icons/Vector-github.svg" alt="github"></a></li>
+                    <li class="icon"><a href="https://www.codewars.com/users/istianreid"><img src="./assets/images/side_icons/Vector-codewars.svg" alt="code wars"></a></li>
+                    <li class="icon"><a href="https://www.linkedin.com/in/christopher-reid-0827891b1/"><img src="./assets/images/side_icons/Vector-linkedin.svg" alt="linkedin"></a></li>
+                    <li class="icon-left-line"><img src="./assets/images/side_icons/Vector-line.svg" alt="line"></li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <ul>
+                    <li class="email"><a href="#"><img src="./assets/images/side_icons/Vector-gmail.svg" alt="gmail"></a></li>
+                    <li class="icon-right-line"><img src="./assets/images/side_icons/Vector-line.svg" alt="line"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 <!-- About -->
 
-    <section class="container-2">
+    <section class="container-2" id="about">
         <div class="row flex-center about">
             <div class="col-xl-7">
                 <div class="flex-center">
@@ -74,7 +98,7 @@
 
 <!-- Project -->
 
-    <section class="container-2 projects">
+    <section class="container-2 projects" id="project">
         <div class="row project-title flex-center">
             <div class="col-xl-12 ">
                 <h2 class="font-40 color-p hover-this"><span>Recent Projects</span></h2>
@@ -226,7 +250,7 @@
     <!-- Contact -->
 
 
-    <section class="container-2  ">
+    <section class="container-2  " id="contact">
         <div class="row contact flex-center ">
             <div class="col-xl-12   ">
 
@@ -239,6 +263,10 @@
         </div>
     </section>
 
+
+
+
+
     <!-- JS style -->
     <script src="./assets/JS/style.js"></script>
 
@@ -249,40 +277,6 @@
 
     <!-- Style function -->
 
-    <script>
-
-        (function () {
-        
-              const link = document.querySelectorAll('.hover-this');
-              const cursor = document.querySelector('.cursor');
-        
-              const animateit = function (e) {
-                    const span = this.querySelector('span');
-                    const { offsetX: x, offsetY: y } = e,
-                    { offsetWidth: width, offsetHeight: height } = this,
-        
-                    move = 25,
-                    xMove = x / width * (move * 2) - move,
-                    yMove = y / height * (move * 2) - move;
-        
-                    span.style.transform = `translate(${xMove}px, ${yMove}px)`;
-        
-                    if (e.type === 'mouseleave') span.style.transform = '';
-              };
-        
-              const editCursor = e => {
-                    const { clientX: x, clientY: y } = e;
-                    cursor.style.left = x + 'px';
-                    cursor.style.top = y + 'px';
-              };
-        
-              link.forEach(b => b.addEventListener('mousemove', animateit));
-              link.forEach(b => b.addEventListener('mouseleave', animateit));
-              window.addEventListener('mousemove', editCursor);
-        
-        })();
-        
-    </script>
 
     <script>
 
@@ -295,6 +289,7 @@
             });
 
     </script>
+
 
 
 </body>

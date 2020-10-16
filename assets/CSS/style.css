@@ -1,4 +1,3 @@
-
 @font-face {
  src: url(../font/Calibre-Regular.ttf);
  font-family: calibre ;
@@ -15,7 +14,7 @@
 
 body {
   background-color: #04131E;
-  cursor: none;
+  
 }
 
 h1,
@@ -92,6 +91,7 @@ a {
   padding: 10px 15px 10px 15px;
   transition: 400ms ease;
 }
+
 .btn:hover{
   background-color: #07cef62d;
 }
@@ -113,29 +113,11 @@ a {
   margin: 20px 20px 20px 5px ;
   font-size: 18px;
   font-weight: 400;
-}
-.hover-this {
-  transition: all 0.3s ease;
+  transition: 300ms ease;
 }
 
-span {
-  display: inline-block;
-  pointer-events: none;
-  transition: transform 0.1s linear;
-}
-
-.cursor {
-  pointer-events: none;
-  position: fixed;
-  padding: 0.3rem;
-  background-color: #07CFF6;
-  border-radius: 50%;
-  mix-blend-mode: difference;
-  transition: transform 0.3s ease;
-}
-
-.hover-this:hover ~ .cursor {
-  transform: translate(-50%, -50%) scale(5);
+.list:hover{
+  color: #fff;
 }
 
 /* Hero */
@@ -151,22 +133,16 @@ span {
 .profile canvas{
   width: 300px !important;
   height: 300px !important;
-  
 }
-/* canvas {
-  background-image: url(../images/plain-photo.png);
-} */
-
-/* image2 {
-  z-index: 100;;
-} */
 
 .hero {
   height: 800px;
 }
+
 .hero-right {
   margin-top: 30px;
 }
+
 .hero-right h1 {
   margin-left: -6px;
 }
@@ -174,6 +150,52 @@ span {
 .hero-right h2 {
   margin-bottom: 40px;
 }
+
+/* side icon */
+
+.side{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.left-side {
+  position: fixed;
+  bottom: 0px;
+  margin-left: 15px;
+}
+
+.right-side {
+  position: fixed;
+  bottom: 0px;
+  margin-left: 1740px;
+}
+
+.icon {
+  margin-bottom: 20px;
+  transition: 400ms ease;
+}
+
+.icon:hover {
+  padding-left: 10px;
+}
+
+
+.email {
+  margin-bottom: 15px;
+  transition: 300ms ease;
+}
+
+.icon-left-line {
+  margin-bottom: -11px;
+  margin-left: 8.5px;
+}
+
+.icon-right-line {
+  margin-bottom: -11px;
+  margin-left: 3px;
+}
+
 
 /* About */
 
@@ -199,10 +221,6 @@ span {
 /* Projects */
 
 
-/* .projects {
-  height: 700px;
-} */
-
 .project-title{
   height: 200px;
   text-align: center;
@@ -220,6 +238,7 @@ span {
   transition: 1s ease;
   opacity: 0.5;
 }
+
 .front-card:hover{
   opacity: 0;
 }
@@ -245,12 +264,16 @@ span {
 /* Contact  */
 
 .contact {
-  height: 800px;
+  height: 1000px;
   text-align: center;
 }
 
+.contact h2,h3 {
+  margin : 20px 0;
+}
+
+
 .contact p {
   width: 500px;
-  margin: 0 auto ;
-  margin-bottom: 60px;
+  margin: 40px auto;
 }
